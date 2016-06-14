@@ -41,7 +41,7 @@ class HtmlWindow(wx.html.HtmlWindow):
         
 class AboutBox(wx.Dialog):
     def __init__(self):
-        wx.Dialog.__init__(self, None, -1, "About WebTV",
+        wx.Dialog.__init__(self, None, -1, "About Streamy",
             style=wx.DEFAULT_DIALOG_STYLE|wx.THICK_FRAME|wx.RESIZE_BORDER|
                 wx.TAB_TRAVERSAL)
         hwin = HtmlWindow(self, -1, size=(400,200))
@@ -143,6 +143,6 @@ class Frame(wx.Frame):
 
 app = wx.App(redirect=True)   # Error messages go to popup window
 LoadStreams()
-top = Frame("WebTV")
+top = Frame("Streamy")
 top.Show()
 app.MainLoop()
