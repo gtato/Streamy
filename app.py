@@ -12,9 +12,7 @@ import sys, re
 import subprocess
 import os.path
 
-aboutText = """<p>Sorry, there is no information about this program. It is
-running on version %(wxpy)s of <b>wxPython</b> and %(python)s of <b>Python</b>.
-See <a href="http://wiki.wxpython.org">wxPython Wiki</a></p>""" 
+aboutText = """<p>User friendly guy for managing streams and playing them with VLC</p>"""
 
 streams={}
 def LoadStreams():
